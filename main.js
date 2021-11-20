@@ -41,9 +41,15 @@ function my_keydown(e)
 	
 		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
 		//write a code to check the type of key pressed
+		{
+			aplhabetkey();
+			document.getElementById("d1").innerHTML="You pressed alphabet key";
+			console.log("alphabet key")
+		}
 		else{
 		otherkey();
 		document.getElementById("d1").innerHTML="You pressed symbol or other key";
+		
 	}
 }
 
